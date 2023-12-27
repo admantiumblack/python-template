@@ -1,1 +1,1 @@
-docker build . -t test --target test && docker run test
+devcontainer exec --workspace-folder . pytest .
