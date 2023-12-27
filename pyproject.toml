@@ -3,6 +3,7 @@ omit = [
     "*__init__.py",
     "/src/main.py"
 ]
+source = ["src"]
 
 [tool.ruff]
 exclude = [
