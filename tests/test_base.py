@@ -1,6 +1,8 @@
-import pytest
-import src
+"""
+test for base python template
+"""
+from src import main
 
 
 def test_base():
-    assert hasattr(src, "main")
+    assert hasattr(main, "main")
