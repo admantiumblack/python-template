@@ -1,4 +1,4 @@
-FROM python:3.12 as test
+FROM python:3.14 as test
 RUN apt-get update && apt-get upgrade -y
 WORKDIR /app
 COPY ./requirements.txt ./requirements.txt
@@ -7,7 +7,7 @@ COPY ./ ./
 ENTRYPOINT ["pytest", "--doctest-modules", "--junitxml=junit/test-results.xml", "--cov=.", "--cov-report=xml", "--cov-report=html"]
 CMD ["."]
 
-FROM python:3.12 as build
+FROM python:3.14 as build
 RUN apt-get update && apt-get upgrade -y
 WORKDIR /app
 COPY ./requirements.txt ./requirements.txt
