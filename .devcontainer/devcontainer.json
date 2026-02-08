@@ -3,9 +3,9 @@
 {
 	"name": "Python 3",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/python:1-3.14-bullseye",
+	"image": "mcr.microsoft.com/devcontainers/python:3.14-bookworm",
 	"features": {
-		"ghcr.io/devcontainers-contrib/features/ruff:1": {},
+		"ghcr.io/jsburckhardt/devcontainer-features/ruff:1": {},
 		"ghcr.io/jsburckhardt/devcontainer-features/gic:1": {},
 		"ghcr.io/jsburckhardt/devcontainer-features/uv:1": {}
 	},
